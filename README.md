@@ -40,11 +40,10 @@ npm i -S react react-dom react-router-dom
     * webpack.dev.conf.js为开发环境配置，继承自webpack.base.conf.js
     * webpack.prod.conf.js为生产环境配置，继承自webpack.base.conf.js
   
-
 * 在根目录下新建src目录，并新建如下两个文件，写个hello world页面
     * index.js为项目入口文件，负责挂载react组件到`<div id="app"></div>`上
     * App.js为React项目根组件
-<br />
+  
 * 配置package.json的scripts属性
 ```
 "scripts": {
@@ -53,6 +52,7 @@ npm i -S react react-dom react-router-dom
   "build": "webpack --progress --colors --config config/webpack.prod.conf.js"
 }
 ```
+  
 * 根目录下新建并配置.babelrc文件
 ```
 {
