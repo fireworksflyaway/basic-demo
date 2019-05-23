@@ -33,3 +33,42 @@ npm i -D webpack-dev-server webpack-merge
 ```
 npm i -S react react-dom react-router-dom
 ```
+
+## 新建配置文件和项目目录
+* 在根目录下新建config目录，新建如下三个配置文件：
+    * webpack.base.conf.js为公用配置
+    * webpack.dev.conf.js为开发环境配置，继承自webpack.base.conf.js
+    * webpack.prod.conf.js为生产环境配置，继承自webpack.base.conf.js
+&nbsp; 
+* 在根目录下新建src目录，并新建如下两个文件，写个hello world页面
+    * index.js为项目入口文件，负责挂载react组件到`<div id="app"></div>`上
+    * App.js为React项目根组件
+&nbsp; 
+* 配置package.json的scripts属性
+```
+"scripts": {
+  "dev": "webpack-dev-server --hot --inline --progress --colors --config config/webpack.dev.conf.js",
+  "start": "npm run dev",
+  "build": "webpack --progress --colors --config config/webpack.prod.conf.js"
+}
+```
+* 根目录下新建并配置.babelrc文件
+```
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+              "targets": {
+                "edge": "17",
+                "firefox": "60",
+                "chrome": "67",
+                "safari": "11.1",
+              }
+            },
+          ],
+          "@babel/preset-react"
+    ],
+    "plugins": []
+}
+```
