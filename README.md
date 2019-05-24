@@ -243,3 +243,4 @@ npm i -S react react-dom react-router-dom
 ```
 npm start         \\测试开发模式
 npm run build     \\测试生产模式
+```
