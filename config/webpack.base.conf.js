@@ -14,7 +14,7 @@ module.exports = {
   },
   // 解析
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.json']
+    extensions: ['.ts', '.tsx', '.js', '.json', '.jsx']
   },
   // loader
   module: {

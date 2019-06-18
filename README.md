@@ -55,7 +55,7 @@ npm i -S react react-dom react-router-dom
       },
       // 解析
       resolve: {
-        extensions: ['.ts', '.tsx', '.js', '.json']
+        extensions: ['.ts', '.tsx', '.js', '.json', '.jsx']
       },
       // loader
       module: {
