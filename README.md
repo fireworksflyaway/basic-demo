@@ -127,7 +127,7 @@ npm i -S react react-dom react-router-dom
 
     const path = require('path');
     const webpack = require('webpack');
-    const CleanWebpackPlugin = require('clean-webpack-plugin');
+    const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
     module.exports = merge(baseWebpackConfig, {
       // 模式
